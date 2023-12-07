@@ -21,6 +21,7 @@ body {
 
 .es-rc #es-rc-content {
   font-family: "Montserrat", sans-serif;
+  max-width: 769px;
 }
 .es-rc #es-rc-content * {
   box-sizing: border-box;

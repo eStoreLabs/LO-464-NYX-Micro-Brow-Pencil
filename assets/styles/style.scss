@@ -48,6 +48,7 @@ body {
 
 .es-rc #es-rc-content {
   font-family: $es-ff-montserrat;
+  max-width: 769px;
 
   * {
     box-sizing: border-box;
