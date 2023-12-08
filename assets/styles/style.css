@@ -568,6 +568,7 @@ body {
   max-width: 200px;
   position: relative;
   padding-bottom: 3rem;
+  overflow: hidden;
 }
 .es-rc #es-rc-content .es-colors__single--1 {
   background-color: #856c56;
@@ -580,6 +581,14 @@ body {
 }
 .es-rc #es-rc-content .es-colors__single--4 {
   background-color: #7a583f;
+}
+.es-rc #es-rc-content .es-colors__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 200ms ease-in-out;
+}
+.es-rc #es-rc-content .es-colors__img:hover {
+  scale: 1.25;
 }
 .es-rc #es-rc-content .es-colors__name {
   font-family: "Barlow Condensed", sans-serif;

@@ -607,12 +607,12 @@ body {
       align-items: center;
       padding: 2px;
       flex-grow: 1;
-      //flex-basis: 25%;
       min-width: 150px;
       width: 23%;
       max-width: 200px;
       position: relative;
       padding-bottom: 3rem;
+      overflow: hidden;
       &--1 {
         background-color: #856c56;
       }
@@ -626,7 +626,13 @@ body {
         background-color: #7a583f;
       }
     }
-
+    &__img {
+      object-fit: cover;
+      transition: all 200ms ease-in-out;
+      &:hover {
+        scale: 1.25;
+      }
+    }
     &__name {
       font-family: $es-ff-barlow;
       font-weight: 700;
