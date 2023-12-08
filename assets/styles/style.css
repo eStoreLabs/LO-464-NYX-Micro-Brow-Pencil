@@ -650,6 +650,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .es-rc #es-rc-content .es-features__single {
   padding-block: 0.75em;
@@ -693,6 +694,7 @@ body {
 .es-rc #es-rc-content .es-features__packshotCtn {
   position: relative;
   padding: 2rem;
+  z-index: 1;
 }
 .es-rc #es-rc-content .es-features__tip {
   position: absolute;
@@ -717,6 +719,40 @@ body {
   min-width: 50px;
   max-width: 100px;
   z-index: 1;
+}
+.es-rc #es-rc-content .es-features__star {
+  transform: rotate(35deg);
+  animation: blink-2 4s ease-in-out infinite both;
+  position: absolute;
+  z-index: 0;
+}
+.es-rc #es-rc-content .es-features__star--1 {
+  width: 60px;
+  height: 60px;
+  bottom: 26%;
+  left: -13%;
+  animation-delay: 0.2s;
+}
+.es-rc #es-rc-content .es-features__star--2 {
+  width: 20px;
+  height: 20px;
+  top: 41%;
+  left: 23%;
+  animation-delay: 3.8s;
+}
+.es-rc #es-rc-content .es-features__star--3 {
+  width: 60px;
+  height: 60px;
+  top: 43%;
+  right: -14%;
+  animation-delay: 2.2s;
+}
+.es-rc #es-rc-content .es-features__star--4 {
+  width: 40px;
+  height: 40px;
+  top: 49%;
+  right: 17%;
+  animation-delay: 1.4s;
 }
 .es-rc #es-rc-content .es-cross {
   padding: 1rem;
