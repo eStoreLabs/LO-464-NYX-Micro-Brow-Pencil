@@ -630,6 +630,94 @@ body {
   position: absolute;
   bottom: 1rem;
 }
+.es-rc #es-rc-content .es-features {
+  background-color: #d43e88;
+  color: #FFF;
+  padding: 2rem;
+}
+.es-rc #es-rc-content .es-features__textCtn {
+  margin-bottom: 2rem;
+}
+.es-rc #es-rc-content .es-features .es-title {
+  color: #faed23;
+}
+.es-rc #es-rc-content .es-features__subtitle {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+.es-rc #es-rc-content .es-features__Ctn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.es-rc #es-rc-content .es-features__single {
+  padding-block: 0.75em;
+  margin-top: 0.5em;
+}
+@media (min-width: 576px) {
+  .es-rc #es-rc-content .es-features__single {
+    padding-block: 0;
+  }
+  .es-rc #es-rc-content .es-features__single--1 {
+    max-width: 84%;
+    align-self: flex-start;
+    position: relative;
+  }
+  .es-rc #es-rc-content .es-features__single--1:after {
+    content: "";
+    position: absolute;
+    top: 63px;
+    display: block;
+    width: 105%;
+    height: 2px;
+    background-color: #faed23;
+  }
+  .es-rc #es-rc-content .es-features__single--2 {
+    max-width: 78%;
+    align-self: flex-end;
+    position: relative;
+    margin-top: 0;
+  }
+  .es-rc #es-rc-content .es-features__single--2:before {
+    content: "";
+    position: absolute;
+    top: -56%;
+    left: -13%;
+    display: block;
+    width: 105%;
+    height: 2px;
+    background-color: #faed23;
+  }
+}
+.es-rc #es-rc-content .es-features__packshotCtn {
+  position: relative;
+  padding: 2rem;
+}
+.es-rc #es-rc-content .es-features__tip {
+  position: absolute;
+}
+.es-rc #es-rc-content .es-features__tip--1 {
+  top: 5%;
+  right: 2%;
+  width: 16%;
+  min-width: 50px;
+  max-width: 80px;
+}
+@media (min-width: 576px) {
+  .es-rc #es-rc-content .es-features__tip--1 {
+    top: -2%;
+    z-index: 1;
+  }
+}
+.es-rc #es-rc-content .es-features__tip--2 {
+  bottom: 5%;
+  left: 2%;
+  width: 20%;
+  min-width: 50px;
+  max-width: 100px;
+  z-index: 1;
+}
 .es-rc #es-rc-content .es-cross {
   padding: 1rem;
   background: rgb(34, 78, 160);
