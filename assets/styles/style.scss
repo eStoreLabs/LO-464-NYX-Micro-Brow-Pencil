@@ -3,6 +3,7 @@ $es-pink--lighter: #ff5dbf;
 $es-teal: #00aeb7;
 $es-teal--lighter: #30e9ea;
 $es-yellow: #faed23;
+$es-colors-name: #8168a2;
 
 $es-ff-barlow: 'Barlow Condensed', sans-serif;
 $es-ff-montserrat: 'Montserrat', sans-serif;
@@ -111,6 +112,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     text-wrap: balance;
+    font-size: 32px;
   }
 
   .es-kv {
@@ -395,7 +397,6 @@ body {
     background-color: $es-pink;
 
     .es-title {
-      font-size: 32px;
       color: $es-yellow;
 
       &--span {
@@ -569,6 +570,78 @@ body {
 
     }
 
+  }
+
+  .es-colors {
+    background-color: $es-pink;
+    color: #FFF;
+    padding: 2rem;
+    .es-title {
+      color: $es-yellow;
+      &--span {
+        display: block;
+        color: $es-teal;
+      }
+
+    }
+    &__textCtn {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    &__text {
+      text-align: center;
+      text-wrap: balance;
+    }
+    &__flexCtn {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+    &__single {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2px;
+      flex-grow: 1;
+      //flex-basis: 25%;
+      min-width: 150px;
+      width: 23%;
+      max-width: 200px;
+      position: relative;
+      padding-bottom: 3rem;
+      &--1 {
+        background-color: #856c56;
+      }
+      &--2 {
+        background-color: #bf9474;
+      }
+      &--3 {
+        background-color: #9e8463;
+      }
+      &--4 {
+        background-color: #7a583f;
+      }
+    }
+
+    &__name {
+      font-family: $es-ff-barlow;
+      font-weight: 700;
+      color: $es-colors-name;
+      font-size: 26px;
+      text-transform: uppercase;
+      background-color: $es-yellow;
+      width: 95%;
+      min-width: 150px;
+      text-align: center;
+      clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 100% 50%, 90% 100%, 10% 100%, 0% 50%, 0% 50%);
+      padding: 4px;
+      position: absolute;
+      bottom: 2rem;
+    }
   }
 
 

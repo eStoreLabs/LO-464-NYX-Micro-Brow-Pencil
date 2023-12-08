@@ -63,6 +63,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   text-wrap: balance;
+  font-size: 32px;
 }
 .es-rc #es-rc-content .es-kv {
   background-color: #d43e88;
@@ -349,7 +350,6 @@ body {
   background-color: #d43e88;
 }
 .es-rc #es-rc-content .es-info .es-title {
-  font-size: 32px;
   color: #faed23;
 }
 .es-rc #es-rc-content .es-info .es-title--span {
@@ -527,6 +527,75 @@ body {
     left: 2%;
     top: 80%;
   }
+}
+.es-rc #es-rc-content .es-colors {
+  background-color: #d43e88;
+  color: #FFF;
+  padding: 2rem;
+}
+.es-rc #es-rc-content .es-colors .es-title {
+  color: #faed23;
+}
+.es-rc #es-rc-content .es-colors .es-title--span {
+  display: block;
+  color: #00aeb7;
+}
+.es-rc #es-rc-content .es-colors__textCtn {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.es-rc #es-rc-content .es-colors__text {
+  text-align: center;
+  text-wrap: balance;
+}
+.es-rc #es-rc-content .es-colors__flexCtn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.es-rc #es-rc-content .es-colors__single {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2px;
+  flex-grow: 1;
+  min-width: 150px;
+  width: 23%;
+  max-width: 200px;
+  position: relative;
+  padding-bottom: 3rem;
+}
+.es-rc #es-rc-content .es-colors__single--1 {
+  background-color: #856c56;
+}
+.es-rc #es-rc-content .es-colors__single--2 {
+  background-color: #bf9474;
+}
+.es-rc #es-rc-content .es-colors__single--3 {
+  background-color: #9e8463;
+}
+.es-rc #es-rc-content .es-colors__single--4 {
+  background-color: #7a583f;
+}
+.es-rc #es-rc-content .es-colors__name {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  color: #8168a2;
+  font-size: 26px;
+  text-transform: uppercase;
+  background-color: #faed23;
+  width: 95%;
+  min-width: 150px;
+  text-align: center;
+  -webkit-clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 100% 50%, 90% 100%, 10% 100%, 0% 50%, 0% 50%);
+          clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 100% 50%, 90% 100%, 10% 100%, 0% 50%, 0% 50%);
+  padding: 4px;
+  position: absolute;
+  bottom: 2rem;
 }
 .es-rc #es-rc-content .es-cross {
   padding: 1rem;
