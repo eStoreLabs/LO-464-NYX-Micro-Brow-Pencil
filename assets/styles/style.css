@@ -406,7 +406,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  animation: scale-in-center 6s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
+  animation: scale-in-center 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
 }
 @media (min-width: 576px) {
   .es-rc #es-rc-content .es-info__rightCtn {
@@ -567,7 +567,7 @@ body {
   width: 23%;
   max-width: 200px;
   position: relative;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   overflow: hidden;
 }
 .es-rc #es-rc-content .es-colors__single--1 {
@@ -582,6 +582,30 @@ body {
 .es-rc #es-rc-content .es-colors__single--4 {
   background-color: #7a583f;
 }
+.es-rc #es-rc-content .es-colors__single--5 {
+  background-color: #975b37;
+}
+.es-rc #es-rc-content .es-colors__single--6 {
+  background-color: #5c3e33;
+}
+.es-rc #es-rc-content .es-colors__single--7 {
+  background-color: #604639;
+}
+.es-rc #es-rc-content .es-colors__single--8 {
+  background-color: #b3927f;
+}
+.es-rc #es-rc-content .es-colors__single--9 {
+  background-color: #4f312f;
+}
+.es-rc #es-rc-content .es-colors__single--10 {
+  background-color: #61453a;
+}
+.es-rc #es-rc-content .es-colors__single--11 {
+  background-color: #716766;
+}
+.es-rc #es-rc-content .es-colors__single--12 {
+  background-color: #000000;
+}
 .es-rc #es-rc-content .es-colors__img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -594,7 +618,7 @@ body {
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 700;
   color: #8168a2;
-  font-size: 26px;
+  font-size: 22px;
   text-transform: uppercase;
   background-color: #faed23;
   width: 95%;
@@ -604,7 +628,7 @@ body {
           clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 100% 50%, 90% 100%, 10% 100%, 0% 50%, 0% 50%);
   padding: 4px;
   position: absolute;
-  bottom: 2rem;
+  bottom: 1rem;
 }
 .es-rc #es-rc-content .es-cross {
   padding: 1rem;
