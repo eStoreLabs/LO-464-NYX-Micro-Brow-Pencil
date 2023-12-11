@@ -824,53 +824,63 @@ body {
         bottom: 26%;
         left: -13%;
         animation-delay: 0.2s;
+
         @media (min-width: 412px) {
           bottom: 33%;
           left: -8%;
         }
+
         @media (min-width: 576px) {
           width: 90px;
           height: 90px;
           bottom: 19%;
           left: -11%;
         }
+
         @media (min-width: 740px) {
           width: 120px;
           height: 120px;
           bottom: 1%;
         }
       }
+
       &--2 {
         width: 20px;
         height: 20px;
         top: 41%;
         left: 23%;
         animation-delay: 3.8s;
+
         @media (min-width: 412px) {
           top: 36%;
         }
+
         @media (min-width: 576px) {
           width: 30px;
           height: 30px;
           left: 21%;
         }
       }
+
       &--3 {
         width: 60px;
         height: 60px;
         top: 43%;
         right: -14%;
         animation-delay: 2.2s;
+
         @media (min-width: 412px) {
           top: 27%;
           right: -10%;
         }
+
         @media (min-width: 576px) {
           width: 90px;
           height: 90px;
           top: 27%;
           right: -9%;
         }
+
         @media (min-width: 740px) {
           width: 120px;
           height: 120px;
@@ -878,23 +888,55 @@ body {
           right: -7%;
         }
       }
+
       &--4 {
         width: 40px;
         height: 40px;
         top: 49%;
         right: 17%;
         animation-delay: 1.4s;
+
         @media (min-width: 576px) {
           width: 60px;
           height: 60px;
           top: 38%;
         }
-        
+
       }
     }
   }
 
+  .es-video {
+    background: linear-gradient(180deg, $es-pink 50%, $es-teal 50%);
 
+    &__wrapper {
+      position: relative;
+      padding: 2rem;
+    }
+
+    &__player {
+      margin: 0 auto;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &__play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+
+    }
+
+    &__image-icon {
+      width: 60%;
+      margin: auto;
+      @media (min-width: 576px) {
+        width: 124px;
+      }
+    }
+  }
 
   .es-cross {
     padding: 1rem;
