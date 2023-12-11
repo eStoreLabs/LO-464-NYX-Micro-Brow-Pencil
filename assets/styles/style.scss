@@ -75,6 +75,7 @@ $es-ff-montserrat: 'Montserrat', sans-serif;
 }
 
 
+
 body {
   margin: 0;
   padding: 0;
@@ -1291,4 +1292,35 @@ body {
       }
     }
   }
+}
+
+.es-reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.es-reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.es-reveal--left {
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.es-reveal--left.active{
+  transform: translateX(0);
+  opacity: 1;
+}
+.es-reveal--right {
+  position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.es-reveal--right.active{
+  transform: translateX(0);
+  opacity: 1;
 }
