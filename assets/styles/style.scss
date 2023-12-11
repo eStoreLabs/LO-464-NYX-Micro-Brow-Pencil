@@ -115,6 +115,14 @@ body {
     font-size: 32px;
   }
 
+  .es-text {
+    font-size: 14px;
+    @media (min-width: 576px) {
+      font-size: 16px;
+    }
+  }
+
+
   .es-kv {
     background-color: $es-pink;
     color: #fff;
@@ -259,6 +267,7 @@ body {
       z-index: -1;
       -webkit-animation: blink-2 4s ease-in-out infinite both;
       animation: blink-2 4s ease-in-out infinite both;
+
     }
 
     &__star--1 {
@@ -726,6 +735,11 @@ body {
       text-align: center;
       text-transform: uppercase;
       margin-top: 12px;
+      font-size: 14px;
+
+      @media (min-width: 576px) {
+        font-size: 16px;
+      }
     }
 
     &__Ctn {
@@ -912,6 +926,7 @@ body {
     &__wrapper {
       position: relative;
       padding: 2rem;
+      z-index: 1;
     }
 
     &__player {
@@ -926,14 +941,166 @@ body {
       left: 50%;
       transform: translate(-50%, -50%);
       cursor: pointer;
-
     }
 
     &__image-icon {
       width: 60%;
       margin: auto;
+
       @media (min-width: 576px) {
         width: 124px;
+      }
+    }
+
+    &__star {
+      position: absolute;
+      transform: rotate(35deg);
+      animation: blink-2 4s ease-in-out infinite both;
+      width: 50px;
+      height: 50px;
+      right: 0;
+      bottom: 2%;
+      z-index: -1;
+
+      @media (min-width: 576px) {
+        width: 65px;
+        height: 65px;
+        right: 4%;
+        bottom: -3%;
+      }
+    }
+  }
+
+  .es-steps {
+    background-color: $es-teal;
+    color: #FFF;
+    padding-block: 2rem;
+    position: relative;
+    .es-title {
+      color: $es-yellow;
+    }
+
+    &__subtitle {
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 12px;
+    }
+
+    &__stepCtn {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      position: relative;
+      z-index: 1;
+      @media (min-width: 576px) {
+        flex-direction: row;
+        gap: 2rem;
+      }
+    }
+
+    &__singleCtn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    &__single {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2px;
+      position: relative;
+      &:before {
+        content: "";
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        transform: translate(0, -50%);
+        top: 50%;
+        left: -3%;
+        height: 300px;
+        z-index: 1;
+        @media (min-width: 576px) {
+          height: 250px;
+        }
+      }
+      &--1:before {
+        background-image: url("../images/step-1_img.png");
+        width: 30px;
+      }
+      &--2:before {
+        background-image: url("../images/step-2_img.png");
+        width: 50px;
+        left: -5%;
+        top: 37%;
+        @media(min-width: 576px) {
+          width: 60px;
+          top: 41%;
+        }
+      }
+    }
+    
+
+    &__name {
+      font-family: $es-ff-barlow;
+      font-weight: 700;
+      font-size: 22px;
+      color: $es-colors-name;
+      text-transform: uppercase;
+      text-align: center;
+      background-color: $es-yellow;
+      width: 99%;
+      clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 100% 50%, 95% 100%, 5% 100%, 0% 50%, 0% 50%);
+      padding: 4px;
+      position: absolute;
+      bottom: -12px;
+    }
+    &__text {
+      text-align: center;
+
+    }
+    &__star {
+      position: absolute;
+      animation: blink-2 4s ease-in-out infinite both;
+      z-index: 0;
+      transform: rotate(35deg);
+      &--1 {
+        width: 55px;
+        height: 55px;
+        top: 17%;
+        left: 0;
+        animation-delay: 4.6s;
+        @media (min-width: 440px) {
+          top: 15%;
+        }
+        @media (min-width: 576px) {
+          left: -4%;
+          top: 20%;
+        }
+        @media (min-width: 650px) {
+          left: 0%;
+          top: 15%;
+        }
+      }
+      &--2 {
+        width: 50px;
+        height: 50px;
+        bottom: 8%;
+        right: -5%;
+        animation-delay: 0.6s;
+        @media (min-width: 440px) {
+          right: -1%;
+        }
+      }
+      &--3 {
+        width: 35px;
+        height: 35px;
+        bottom: 6%;
+    right: 11%;
+        animation-delay: 1.8s;
       }
     }
   }

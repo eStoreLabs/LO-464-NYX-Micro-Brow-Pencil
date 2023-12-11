@@ -65,6 +65,14 @@ body {
   text-wrap: balance;
   font-size: 32px;
 }
+.es-rc #es-rc-content .es-text {
+  font-size: 14px;
+}
+@media (min-width: 576px) {
+  .es-rc #es-rc-content .es-text {
+    font-size: 16px;
+  }
+}
 .es-rc #es-rc-content .es-kv {
   background-color: #d43e88;
   color: #fff;
@@ -645,6 +653,12 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin-top: 12px;
+  font-size: 14px;
+}
+@media (min-width: 576px) {
+  .es-rc #es-rc-content .es-features__subtitle {
+    font-size: 16px;
+  }
 }
 .es-rc #es-rc-content .es-features__Ctn {
   display: flex;
@@ -822,6 +836,7 @@ body {
 .es-rc #es-rc-content .es-video__wrapper {
   position: relative;
   padding: 2rem;
+  z-index: 1;
 }
 .es-rc #es-rc-content .es-video__player {
   margin: 0 auto;
@@ -844,6 +859,165 @@ body {
   .es-rc #es-rc-content .es-video__image-icon {
     width: 124px;
   }
+}
+.es-rc #es-rc-content .es-video__star {
+  position: absolute;
+  transform: rotate(35deg);
+  animation: blink-2 4s ease-in-out infinite both;
+  width: 50px;
+  height: 50px;
+  right: 0;
+  bottom: 2%;
+  z-index: -1;
+}
+@media (min-width: 576px) {
+  .es-rc #es-rc-content .es-video__star {
+    width: 65px;
+    height: 65px;
+    right: 4%;
+    bottom: -3%;
+  }
+}
+.es-rc #es-rc-content .es-steps {
+  background-color: #00aeb7;
+  color: #FFF;
+  padding-block: 2rem;
+  position: relative;
+}
+.es-rc #es-rc-content .es-steps .es-title {
+  color: #faed23;
+}
+.es-rc #es-rc-content .es-steps__subtitle {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+.es-rc #es-rc-content .es-steps__stepCtn {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+@media (min-width: 576px) {
+  .es-rc #es-rc-content .es-steps__stepCtn {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+.es-rc #es-rc-content .es-steps__singleCtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.es-rc #es-rc-content .es-steps__single {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2px;
+  position: relative;
+}
+.es-rc #es-rc-content .es-steps__single:before {
+  content: "";
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  transform: translate(0, -50%);
+  top: 50%;
+  left: -3%;
+  height: 300px;
+  z-index: 1;
+}
+@media (min-width: 576px) {
+  .es-rc #es-rc-content .es-steps__single:before {
+    height: 250px;
+  }
+}
+.es-rc #es-rc-content .es-steps__single--1:before {
+  background-image: url("../images/step-1_img.png");
+  width: 30px;
+}
+.es-rc #es-rc-content .es-steps__single--2:before {
+  background-image: url("../images/step-2_img.png");
+  width: 50px;
+  left: -5%;
+  top: 37%;
+}
+@media (min-width: 576px) {
+  .es-rc #es-rc-content .es-steps__single--2:before {
+    width: 60px;
+    top: 41%;
+  }
+}
+.es-rc #es-rc-content .es-steps__name {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #8168a2;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #faed23;
+  width: 99%;
+  -webkit-clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 100% 50%, 95% 100%, 5% 100%, 0% 50%, 0% 50%);
+          clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 100% 50%, 95% 100%, 5% 100%, 0% 50%, 0% 50%);
+  padding: 4px;
+  position: absolute;
+  bottom: -12px;
+}
+.es-rc #es-rc-content .es-steps__text {
+  text-align: center;
+}
+.es-rc #es-rc-content .es-steps__star {
+  position: absolute;
+  animation: blink-2 4s ease-in-out infinite both;
+  z-index: 0;
+  transform: rotate(35deg);
+}
+.es-rc #es-rc-content .es-steps__star--1 {
+  width: 55px;
+  height: 55px;
+  top: 17%;
+  left: 0;
+  animation-delay: 4.6s;
+}
+@media (min-width: 440px) {
+  .es-rc #es-rc-content .es-steps__star--1 {
+    top: 15%;
+  }
+}
+@media (min-width: 576px) {
+  .es-rc #es-rc-content .es-steps__star--1 {
+    left: -4%;
+    top: 20%;
+  }
+}
+@media (min-width: 650px) {
+  .es-rc #es-rc-content .es-steps__star--1 {
+    left: 0%;
+    top: 15%;
+  }
+}
+.es-rc #es-rc-content .es-steps__star--2 {
+  width: 50px;
+  height: 50px;
+  bottom: 8%;
+  right: -5%;
+  animation-delay: 0.6s;
+}
+@media (min-width: 440px) {
+  .es-rc #es-rc-content .es-steps__star--2 {
+    right: -1%;
+  }
+}
+.es-rc #es-rc-content .es-steps__star--3 {
+  width: 35px;
+  height: 35px;
+  bottom: 6%;
+  right: 11%;
+  animation-delay: 1.8s;
 }
 .es-rc #es-rc-content .es-cross {
   padding: 1rem;
